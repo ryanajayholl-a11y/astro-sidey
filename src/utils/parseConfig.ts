@@ -11,9 +11,6 @@ const configSchema = z.object({
     author: z.string(),
     locale: z.string().default("en"),
   }),
-  layout: z.object({
-    postsPerPage: z.number().default(10),
-  }),
   navigation: z.array(
     z.object({
       label: z.string(),
