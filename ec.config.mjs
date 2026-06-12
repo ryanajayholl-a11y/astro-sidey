@@ -5,8 +5,8 @@ import { pluginCollapsibleSections } from "@expressive-code/plugin-collapsible-s
 export default defineEcConfig({
   themes: ["monokai"],
   styleOverrides: {
-    codeFontFamily: "Geist Mono, monospace",
-    uiFontFamily: "Geist, sans-serif",
+    codeFontFamily: "Geist Mono Variable, monospace",
+    uiFontFamily: "Geist Variable, sans-serif",
     borderColor: "transparent",
   },
   plugins: [pluginLineNumbers(), pluginCollapsibleSections()],
