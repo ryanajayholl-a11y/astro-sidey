@@ -11,6 +11,7 @@ import sitemap from "@astrojs/sitemap"
 import astroExpressiveCode from "astro-expressive-code"
 
 // Remark Rehype Plugins
+import { unified } from "@astrojs/markdown-remark"
 import rehypeExternalLinks from "rehype-external-links"
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs"
 import rehypeLightbox from "./src/plugins/rehype-lightbox.mjs"
@@ -25,23 +26,29 @@ export default defineConfig({
   },
   integrations: [astroExpressiveCode(), mdx(), icon(), sitemap()],
   markdown: {
-    remarkPlugins: [remarkReadingTime],
-    rehypePlugins: [
-      rehypeLightbox,
-      [
-        rehypeExternalLinks,
-        {
-          target: "_blank",
-          rel: ["noopener", "noreferrer", "external"],
-        },
+    processor: unified({
+      remarkPlugins: [remarkReadingTime],
+      rehypePlugins: [
+        rehypeLightbox,
+        [
+          rehypeExternalLinks,
+          {
+            target: "_blank",
+            rel: ["noopener", "noreferrer", "external"],
+          },
+        ],
       ],
-    ],
+    }),
   },
   prefetch: {
     defaultStrategy: "viewport",
     prefetchAll: true,
   },
   site: sideyConfig.site.url,
+  server: {
+    host: true,
+    allowedHosts: ["thursday-gurgling-tipper.ngrok-free.dev"],
+  },
   vite: {
     plugins: [tailwindcss()],
   },
