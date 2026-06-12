@@ -58,10 +58,6 @@ export default defineConfig({
     prefetchAll: true,
   },
   site: sideyConfig.site.url,
-  server: {
-    host: true,
-    allowedHosts: ["thursday-gurgling-tipper.ngrok-free.dev"],
-  },
   vite: {
     plugins: [tailwindcss()],
   },
