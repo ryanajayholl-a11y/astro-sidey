@@ -9,7 +9,7 @@ export const sideyConfig = {
    */
   site: {
     // The main title displayed in browser tabs and search engine results
-    title: "Astro Sidey",
+    title: "Ryan Hollingshead",
 
     // A short fallback summary of your site used for SEO and social share cards
     description: "A minimal, content-focused Astro theme for personal sites.",
@@ -18,7 +18,7 @@ export const sideyConfig = {
     url: "https://sidey.odhyp.com",
 
     // Your name, utilized in copyright strings and author meta tags
-    author: "Odhy Pradhana",
+    author: "Ryan Hollingshead",
 
     // The primary language attribute for HTML accessibility engines (e.g., "en", "id")
     locale: "en",
@@ -32,9 +32,9 @@ export const sideyConfig = {
    */
   navigation: [
     { label: "Home", href: "/" },
-    { label: "Writings", href: "/writings" },
     { label: "About", href: "/about" },
-    { label: "RSS", href: "/rss.xml" },
+    { label: "Posts", href: "/posts" },
+    { label: "TBD", href: "/tbd" },
   ],
 }
 
