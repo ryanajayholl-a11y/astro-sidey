@@ -12,7 +12,7 @@ export const sideyConfig = {
     title: "Ryan Hollingshead",
 
     // A short fallback summary of your site used for SEO and social share cards
-    description: "A minimal, content-focused Astro theme for personal sites.",
+    description: "In SF at a Series A fintech startup called Two Dots in a Product role.",
 
     // The production domain where your site is deployed (no trailing slash)
     url: "https://sidey.odhyp.com",
@@ -32,9 +32,9 @@ export const sideyConfig = {
    */
   navigation: [
     { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Posts", href: "/posts" },
-    { label: "TBD", href: "/tbd" },
+    { label: "Experience", href: "/experience" },
+    { label: "Writing", href: "/writing" },
+    { label: "Golf and More", href: "/golfandmore" },
   ],
 }
 
