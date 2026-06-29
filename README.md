@@ -1,4 +1,4 @@
-# Astro Sidey
+# Ryan Hollingshead
 
 A content-focused, side-anchored minimalist theme designed for developers,
 writers, and digital gardeners. Built on Astro. Nothing in the way, just your
